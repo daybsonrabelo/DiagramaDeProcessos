@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Process Diagram</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- Título Telas -->
+    <string name="title_activity_diagrama_parcial">Partial Diagram</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_ajuda">Help</string>
+    <string name="title_activity_configuracoes">Settings</string>
+    <string name="title_activity_sobre">About</string>
+
+    <!-- Tela Principal -->
+    <string name="iniciacao">Initiating</string>
+    <string name="planejamento">Planning</string>
+    <string name="execucao">Executing</string>
+    <string name="monitoramento_controle">Monitoring and Controlling</string>
+    <string name="encerramento">Clossing</string>
+
+    <!-- Tela Diagrama Parcial -->
+    <string name="checar">Check</string>
+    <string name="reiniciar">Restart</string>
+    <string name="acoes">Actions</string>
+    <string name="finalizar">Conclude</string>
+    <string name="confirmar">Confirm</string>
+
+    <!-- Tela Configurações -->
+    <string name="selecionar_linguagem">Select Language</string>
+
+    <!-- Tela Sobre -->
+    <string name="idealizado_nmgp">System devised by NossoMundoGP</string>
+    <string name="link_blog">Blog NMGP</string>
+    <string name="desenvolvido">Developed by</string>
+    <string name="link">Link</string>
+    <string name="title_activity_brancoso">Brancoso</string>
+
+</resources>

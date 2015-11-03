@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/parcial_menu_checar"
+        android:icon="@drawable/check"
+        android:title="@string/checar"
+        android:showAsAction="always|withText" />
+    
+    <item
+        android:id="@+id/parcial_menu_reiniciar"
+        android:icon="@drawable/restart"
+        android:title="@string/reiniciar"
+        android:showAsAction="always|withText" />
+    
+    <item
+        android:id="@+id/parcial_menu_finalizar"
+        android:icon="@drawable/return_diagram"
+        android:title="@string/finalizar"
+        android:showAsAction="always|withText" />
+
+</menu>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="verde_claro">#97FDA9</color>
+    <color name="verde_escuro">#03C225</color>
+    <color name="cinza_claro">#D2D2D0</color>
+    
+    <color name="cor_errado">#DD571E</color>
+    
+    <!-- Cores áreas de conhecimento -->
+    <color name="iniciacao">#BDECB6</color>
+    <color name="planejamento">#B7EAEC</color>
+    <color name="execucao">#FFBEBB</color>
+    <color name="monitoramento_controle">#F3CCAF</color>
+    <color name="encerramento">#D2D2D0</color>
+    
+</resources>

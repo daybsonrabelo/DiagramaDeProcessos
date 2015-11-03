@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Diagrama de Processos</string>
+    <string name="hello_world">Olá Mundo!</string>
+    <string name="menu_settings">Configurações</string>
+
+    <!-- Título Telas -->
+    <string name="title_activity_diagrama_parcial">Diagrama Parcial</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_ajuda">Ajuda</string>
+    <string name="title_activity_configuracoes">Configurações</string>
+    <string name="title_activity_sobre">Sobre</string>
+
+    <!-- Tela Principal -->
+    <string name="iniciacao">Iniciação</string>
+    <string name="planejamento">Planejamento</string>
+    <string name="execucao">Execução</string>
+    <string name="monitoramento_controle">Monitoramento e Controle</string>
+    <string name="encerramento">Encerramento</string>
+
+    <!-- Tela Diagrama Parcial -->
+    <string name="checar">Checar</string>
+    <string name="reiniciar">Reiniciar</string>
+    <string name="acoes">Ações</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="confirmar">Confirmar</string>
+    
+    <!-- Tela Configurações -->
+    <string name="selecionar_linguagem">Selecionar Linguagem</string>
+    
+	<!-- Tela Sobre -->
+    <string name="idealizado_nmgp">Sistema idealizado por NossoMundoGP</string>
+    <string name="link_blog">Blog NMGP</string>
+    <string name="desenvolvido">Desenvolvido por</string>
+    <string name="link">Link</string>
+</resources>
