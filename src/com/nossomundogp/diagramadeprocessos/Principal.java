@@ -29,7 +29,7 @@ public class Principal extends Activity implements OnClickListener {
 	//public final int Configuracoes = 2;
 	
 	/**
-	 * Menus da aplicação.
+	 * Menus da aplicaÃ§Ã£o.
 	 */
 	public static final int AJUDA = 0;
 	public static final int SOBRE = 1;

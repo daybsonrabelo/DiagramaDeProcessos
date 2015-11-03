@@ -2,7 +2,6 @@ package com.nossomundogp.diagramadeprocessos;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
 
 public class Ajuda extends Activity {
 

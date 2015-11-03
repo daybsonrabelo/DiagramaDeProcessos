@@ -35,32 +35,32 @@ public class DiagramaParcial extends Activity {
 	Drawable corPadrao;
 	
 	String[] iniciacao = {"Selecionar o gerente de projetos", "Determinar a cultura e os sistemas existentes da empresa",
-			"Reunir processos, procedimentos e informações históricas", "Dividir projetos grandes em fases", "Compreender o caso de negócios",
-			"Identificar requisitos, premissas, riscos e restrições iniciais, além dos acordos existentes", "Avaliar a viabilidade dos projetos e de produtos com as restrições determinadas",
-			"Criar objetivos mensuráveis", "Desenvolver o termo de abertura do projeto", "Identificar as partes interessadas e determinar suas expectativas, influência a impacto"};
+			"Reunir processos, procedimentos e informaÃ§Ãµes histÃ³ricas", "Dividir projetos grandes em fases", "Compreender o caso de negÃ³cios",
+			"Identificar requisitos, premissas, riscos e restriÃ§Ãµes iniciais, alÃ©m dos acordos existentes", "Avaliar a viabilidade dos projetos e de produtos com as restriÃ§Ãµes determinadas",
+			"Criar objetivos mensurÃ¡veis", "Desenvolver o termo de abertura do projeto", "Identificar as partes interessadas e determinar suas expectativas, influÃªncia a impacto"};
 	
-	String[] planejamento = {"Determinar como você vai planejar para cada área de atuação", "Determinar requisitos detalhados", "Criar a declaração do escopo do projeto", 
-			"Determinar o que adquirir e preparar documentos de aquisição", "Determinar a equipe de planejamento", "Criar a EAP e o dicionário da EAP", "Criar a lista de atividades",
-			"Criar o diagrama de rede", "Estimar os requisitos de recursos", "Estimar o tempo e os custos", "Determinar o caminho crítico", "Desenvolver o cronograma", "Desenvolver o orçamento",
-			"Determinar padrões, processos e métricas de qualidade", "Criar o plano de melhoria de processos", "Determinar todos os papéis e responsabilidades", "Planejar as comunicações e engajamento das partes interessadas",
-			"Realizar a identificação dos riscos, as análises qualitativa e quantitativa dos riscos e o planejamento de respostas aos riscos", "Voltar - iterações", "Finalizar os documentos de aquisição", 
-			"Criar o plano de gerenciamento de mudanças", "Concluir a parte de 'como executar e controlar' de todos os planos de gerenciamento", "Desenvolver uma linha de base de desempenho e um plano de GP realista e final",
-			"Obter a aprovação formal do plano", "Organizar uma reunião de partida"};
+	String[] planejamento = {"Determinar como vocÃª vai planejar para cada Ã¡rea de atuaÃ§Ã£o", "Determinar requisitos detalhados", "Criar a declaraÃ§Ã£o do escopo do projeto", 
+			"Determinar o que adquirir e preparar documentos de aquisiÃ§Ã£o", "Determinar a equipe de planejamento", "Criar a EAP e o dicionÃ¡rio da EAP", "Criar a lista de atividades",
+			"Criar o diagrama de rede", "Estimar os requisitos de recursos", "Estimar o tempo e os custos", "Determinar o caminho crÃ­tico", "Desenvolver o cronograma", "Desenvolver o orÃ§amento",
+			"Determinar padrÃµes, processos e mÃ©tricas de qualidade", "Criar o plano de melhoria de processos", "Determinar todos os papÃ©is e responsabilidades", "Planejar as comunicaÃ§Ãµes e engajamento das partes interessadas",
+			"Realizar a identificaÃ§Ã£o dos riscos, as anÃ¡lises qualitativa e quantitativa dos riscos e o planejamento de respostas aos riscos", "Voltar - iteraÃ§Ãµes", "Finalizar os documentos de aquisiÃ§Ã£o", 
+			"Criar o plano de gerenciamento de mudanÃ§as", "Concluir a parte de 'como executar e controlar' de todos os planos de gerenciamento", "Desenvolver uma linha de base de desempenho e um plano de GP realista e final",
+			"Obter a aprovaÃ§Ã£o formal do plano", "Organizar uma reuniÃ£o de partida"};
 	
 	String[] execucao = {"Executar o trabalho de acordo com o plano do GP", "Produzir as entregas do produto", "Reunir dados de desempenho e trabalho", 
-			"Solicitar mudanças", "Implementar apenas as mudanças aprovadas", "Melhorar continuamente", "Seguir os processos", "Determinar se os processos estão corretos e são eficazes",
+			"Solicitar mudanÃ§as", "Implementar apenas as mudanÃ§as aprovadas", "Melhorar continuamente", "Seguir os processos", "Determinar se os processos estÃ£o corretos e sÃ£o eficazes",
 			"Realizar auditorias de qualidade", "Mobilizar a equipe final", "Gerenciar pessoas", "Avaliar o desempenho individual e de equipe", "Realizar atividades de desenvolvimento de equipe",
-			"Oferecer reconhecimento e recompensas", "Usar registros de questões", "Facilitar a resolução de conflitos", "Liberar recursos conforme o trabalho for terminado", "Enviar e receber informações e solicitar feedback",
-			"Reportar o desempenho do projeto", "Gerenciar o engajamento e as expectativas das partes interessadas", "Realizar reuniões", "Selecionar fornecedores"};
+			"Oferecer reconhecimento e recompensas", "Usar registros de questÃµes", "Facilitar a resoluÃ§Ã£o de conflitos", "Liberar recursos conforme o trabalho for terminado", "Enviar e receber informaÃ§Ãµes e solicitar feedback",
+			"Reportar o desempenho do projeto", "Gerenciar o engajamento e as expectativas das partes interessadas", "Realizar reuniÃµes", "Selecionar fornecedores"};
 	
-	String[] monitoramento = {"Tomar medidas para controlar o projeto", "Medir o desempenho pela linha de base", "Medir o desempenho por outras métricas do plano de GP", "Analisar e avaliar o desempenho",
-			"Determinar se as variações requerem ações corretivas ou outra solicitação de mudanças", "Influenciar os fatores que causam mudanças", "Solicitar mudanças", "Realizar o controle  integrado de mudanças",
-			"Aprovar ou rejeitar mudanças", "Atualizar o plano do GP e os documentos do projeto", "Informar as partes interessadas sobre os resultados de solicitações de mudança", "Monitorar o engajamento das partes interessadas",
-			"Gerenciar a configuração", "Criar previsões", "Obter aceite do cliente de entregas parciais", "Realizar o controle da qualidade", "Realizar as reavaliações e auditorias de riscos",
-			"Gerenciar as reservas", "Controlar as aquisições"};
+	String[] monitoramento = {"Tomar medidas para controlar o projeto", "Medir o desempenho pela linha de base", "Medir o desempenho por outras mÃ©tricas do plano de GP", "Analisar e avaliar o desempenho",
+			"Determinar se as variaÃ§Ãµes requerem aÃ§Ãµes corretivas ou outra solicitaÃ§Ã£o de mudanÃ§as", "Influenciar os fatores que causam mudanÃ§as", "Solicitar mudanÃ§as", "Realizar o controle  integrado de mudanÃ§as",
+			"Aprovar ou rejeitar mudanÃ§as", "Atualizar o plano do GP e os documentos do projeto", "Informar as partes interessadas sobre os resultados de solicitaÃ§Ãµes de mudanÃ§a", "Monitorar o engajamento das partes interessadas",
+			"Gerenciar a configuraÃ§Ã£o", "Criar previsÃµes", "Obter aceite do cliente de entregas parciais", "Realizar o controle da qualidade", "Realizar as reavaliaÃ§Ãµes e auditorias de riscos",
+			"Gerenciar as reservas", "Controlar as aquisiÃ§Ãµes"};
 	
-	String[] encerramento = {"Confirmar que o trabalho é realizado de acordo com os requisitos", "Terminar o encerramento das aquisições", "Obter a aceitação final do produto", "Terminar o encerramento financeiro",
-			"Entregar o produto completo", "Solicitar feedback do cliente sobre o produto", "Concluir relatórios finais de desempenho", "Registros de índice e acervo", "Coletar as lições aprendidas finais e atualizar a base de conhecimento"};
+	String[] encerramento = {"Confirmar que o trabalho Ã© realizado de acordo com os requisitos", "Terminar o encerramento das aquisiÃ§Ãµes", "Obter a aceitaÃ§Ã£o final do produto", "Terminar o encerramento financeiro",
+			"Entregar o produto completo", "Solicitar feedback do cliente sobre o produto", "Concluir relatÃ³rios finais de desempenho", "Registros de Ã­ndice e acervo", "Coletar as liÃ§Ãµes aprendidas finais e atualizar a base de conhecimento"};
 	
 	List<String> listaStringIniciacao = new ArrayList<String>();
 	List<String> listaStringPlanejamento = new ArrayList<String>();
@@ -205,7 +205,7 @@ public class DiagramaParcial extends Activity {
         TextView titulo = (TextView) findViewById(R.id.txtTitulo);
         if (tipo.equals("A")) {
         	carregaListas(listaStringIniciacao, listaStringPlanejamento, listaStringExecucao, listaStringMonitoramento, listaStringEncerramento, tipo, "B", "C", "D", "E");
-        	titulo.setText("Iniciação");
+        	titulo.setText("Iniciaï¿½ï¿½o");
         	containerEsquerda.setBackgroundResource(R.color.iniciacao);
         	containerDireita.setBackgroundResource(R.color.iniciacao);
         } else if (tipo.equals("B")) {
@@ -215,7 +215,7 @@ public class DiagramaParcial extends Activity {
         	containerDireita.setBackgroundResource(R.color.planejamento);
         } else if (tipo.equals("C")) {
         	carregaListas(listaStringExecucao, listaStringIniciacao, listaStringPlanejamento, listaStringMonitoramento, listaStringEncerramento, tipo, "A", "B", "D", "E");
-        	titulo.setText("Execução");
+        	titulo.setText("Execuï¿½ï¿½o");
         	containerEsquerda.setBackgroundResource(R.color.execucao);
         	containerDireita.setBackgroundResource(R.color.execucao);
         } else if (tipo.equals("D")) {
@@ -278,8 +278,8 @@ public class DiagramaParcial extends Activity {
 		super.onCreateOptionsMenu(menu);
 		getMenuInflater().inflate(R.menu.activity_diagrama_parcial, menu);
 		
-		//Inicia desabilitado e só pode clicar depois de checar
-		menu.getItem(MENU_FINALIZAR).setEnabled(correto);//TODO: Ajustar index da opção
+		//Inicia desabilitado e sÃ³ pode clicar depois de checar
+		menu.getItem(MENU_FINALIZAR).setEnabled(correto);
 		
         return true;
     }
@@ -311,7 +311,7 @@ public class DiagramaParcial extends Activity {
     }
     
     /**
-     * Verifica se o usuário preenchou corretamento de acordo com
+     * Verifica se o usuÃ¡rio preenchou corretamento de acordo com
      * o grupo de processos escolhido na tela principal.
      */
     private void checar() {
@@ -327,7 +327,7 @@ public class DiagramaParcial extends Activity {
 			botaoC = (Button) bt;
 			tag = botaoC.getTag().toString().trim();
 			
-			if (botaoC.getText().equals("Solicitar mudanças") && 
+			if (botaoC.getText().equals("Solicitar mudanÃ§as") && 
 					(params.getString("Tipo").equals("C") || params.getString("Tipo").equals("D"))) {
 				count++;
 			} else if (tag.equals(params.getString("Tipo"))) {
@@ -341,18 +341,18 @@ public class DiagramaParcial extends Activity {
 		}
 		
 		if (errado) {
-			Toast.makeText(DiagramaParcial.this, "Existe uma ou mais ações não pertencentes a esse grupo de processo!", Toast.LENGTH_SHORT).show();
+			Toast.makeText(DiagramaParcial.this, "Existe uma ou mais aÃ§Ãµes nÃ£o pertencentes a esse grupo de processo!", Toast.LENGTH_SHORT).show();
 			correto = false;
 			invalidateOptionsMenu();
 			return;
 		}
 		
 		if (count == total) {
-			Toast.makeText(DiagramaParcial.this, "Parabéns, você concluiu com sucesso o grupo de processo!", Toast.LENGTH_SHORT).show();
+			Toast.makeText(DiagramaParcial.this, "ParabÃ©ns, vocÃª concluiu com sucesso o grupo de processo!", Toast.LENGTH_SHORT).show();
 			correto = true;
 			invalidateOptionsMenu();
 		} else {
-			Toast.makeText(DiagramaParcial.this, "Falta uma ou mais ações para o grupo de processo!", Toast.LENGTH_SHORT).show();
+			Toast.makeText(DiagramaParcial.this, "Falta uma ou mais aÃ§Ãµes para o grupo de processo!", Toast.LENGTH_SHORT).show();
 			correto = false;
 			invalidateOptionsMenu();
 		}
@@ -360,8 +360,8 @@ public class DiagramaParcial extends Activity {
     
     /**
      * Reinicia os estado da tela.
-     * Limpa as opções do ScrollView da direita e ramdomiza as
-     * opções do ScrollView da esquerda.
+     * Limpa as opÃ§Ãµes do ScrollView da direita e ramdomiza as
+     * opÃ§Ãµes do ScrollView da esquerda.
      */
     private void reiniciar() {
     	iniciaVariaveis();
@@ -369,7 +369,7 @@ public class DiagramaParcial extends Activity {
     }
     
     /**
-     * Retorna a lista preenchida pelo usuário para a tela principal.
+     * Retorna a lista preenchida pelo usuÃ¡rio para a tela principal.
      */
     private void finalizar() {
     	LinearLayout containerDireita = (LinearLayout) findViewById(R.id.direita);
