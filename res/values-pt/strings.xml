@@ -34,4 +34,96 @@
     <string name="link_blog">Blog NMGP</string>
     <string name="desenvolvido">Desenvolvido por</string>
     <string name="link">Link</string>
+    
+    <!-- Textos das áreas de processos -->
+    	<!-- Iniciação -->
+    	<string name="ini_1">Selecionar o gerente de projetos</string>
+    	<string name="ini_2">Determinar a cultura e os sistemas existentes da empresa</string>
+    	<string name="ini_3">Reunir processos, procedimentos e informações históricas</string>
+    	<string name="ini_4">Dividir projetos grandes em fases</string>
+    	<string name="ini_5">Compreender o caso de negócios</string>
+    	<string name="ini_6">Identificar requisitos, premissas, riscos e restrições iniciais, além dos acordos existentes</string>
+    	<string name="ini_7">Avaliar a viabilidade dos projetos e de produtos com as restrições determinadas</string>
+    	<string name="ini_8">Criar objetivos mensuráveis</string>
+    	<string name="ini_9">Desenvolver o termo de abertura do projeto</string>
+    	<string name="ini_10">Identificar as partes interessadas e determinar suas expectativas, influência a impacto</string>
+    	<!-- Planejamento -->
+    	<string name="pla_1">Determinar como você vai planejar para cada área de atuação</string>
+    	<string name="pla_2">Determinar requisitos detalhados</string>
+    	<string name="pla_3">Criar a declaração do escopo do projeto</string>
+    	<string name="pla_4">Determinar o que adquirir e preparar documentos de aquisição</string>
+    	<string name="pla_5">Determinar a equipe de planejamento</string>
+    	<string name="pla_6">Criar a EAP e o dicionário da EAP</string>
+    	<string name="pla_7">Criar a lista de atividades</string>
+    	<string name="pla_8">Criar o diagrama de rede</string>
+    	<string name="pla_9">Estimar os requisitos de recursos</string>
+    	<string name="pla_10">Estimar o tempo e os custos</string>
+    	<string name="pla_11">Determinar o caminho crítico</string>
+    	<string name="pla_12">Desenvolver o cronograma</string>
+    	<string name="pla_13">Desenvolver o orçamento</string>
+    	<string name="pla_14">Determinar padrões, processos e métricas de qualidade</string>
+    	<string name="pla_15">Criar o plano de melhoria de processos</string>
+    	<string name="pla_16">Determinar todos os papéis e responsabilidades</string>
+    	<string name="pla_17">Planejar as comunicações e engajamento das partes interessadas</string>
+    	<string name="pla_18">Realizar a identificação dos riscos, as análises qualitativa e quantitativa dos riscos e o planejamento de respostas aos riscos</string>
+    	<string name="pla_19">Voltar - iterações</string>
+    	<string name="pla_20">Finalizar os documentos de aquisição</string>
+    	<string name="pla_21">Criar o plano de gerenciamento de mudanças</string>
+    	<string name="pla_22">Concluir a parte de "como executar e controlar" de todos os planos de gerenciamento</string>
+    	<string name="pla_23">Desenvolver uma linha de base de desempenho e um plano de GP realista e final</string>
+    	<string name="pla_24">Obter a aprovação formal do plano</string>
+    	<string name="pla_25">Organizar uma reunião de partida</string>
+    	<!-- Execução -->
+    	<string name="exe_1">Executar o trabalho de acordo com o plano do GP</string>
+    	<string name="exe_2">Produzir as entregas do produto</string>
+    	<string name="exe_3">Reunir dados de desempenho e trabalho</string>
+    	<string name="exe_4">Solicitar mudanças</string>
+    	<string name="exe_5">Implementar apenas as mudanças aprovadas</string>
+    	<string name="exe_6">Melhorar continuamente</string>
+    	<string name="exe_7">Seguir os processos</string>
+    	<string name="exe_8">Determinar se os processos estão corretos e são eficazes</string>
+    	<string name="exe_9">Realizar auditorias de qualidade</string>
+    	<string name="exe_10">Mobilizar a equipe final</string>
+    	<string name="exe_11">Gerenciar pessoas</string>
+    	<string name="exe_12">Avaliar o desempenho individual e de equipe</string>
+    	<string name="exe_13">Realizar atividades de desenvolvimento de equipe</string>
+    	<string name="exe_14">Oferecer reconhecimento e recompensas</string>
+    	<string name="exe_15">Usar registros de questões</string>
+    	<string name="exe_16">Facilitar a resolução de conflitos</string>
+    	<string name="exe_17">Liberar recursos conforme o trabalho for terminado</string>
+    	<string name="exe_18">Enviar e receber informações e solicitar feedback</string>
+    	<string name="exe_19">Reportar o desempenho do projeto</string>
+    	<string name="exe_20">Gerenciar o engajamento e as expectativas das partes interessadas</string>
+    	<string name="exe_21">Realizar reuniões</string>
+    	<string name="exe_22">Selecionar fornecedores</string>
+    	<!-- Monitoramento -->
+    	<string name="mon_1">Tomar medidas para controlar o projeto</string>
+    	<string name="mon_2">Medir o desempenho pela linha de base</string>
+    	<string name="mon_3">Medir o desempenho por outras métricas do plano de GP</string>
+    	<string name="mon_4">Analisar e avaliar o desempenho</string>
+    	<string name="mon_5">Determinar se as variações requerem ações corretivas ou outra solicitação de mudanças</string>
+    	<string name="mon_6">Influenciar os fatores que causam mudanças</string>
+    	<string name="mon_7">Solicitar mudanças</string>
+    	<string name="mon_8">Realizar o controle  integrado de mudanças</string>
+    	<string name="mon_9">Aprovar ou rejeitar mudanças</string>
+    	<string name="mon_10">Atualizar o plano do GP e os documentos do projeto</string>
+    	<string name="mon_11">Informar as partes interessadas sobre os resultados de solicitações de mudança</string>
+    	<string name="mon_12">Monitorar o engajamento das partes interessadas</string>
+    	<string name="mon_13">Gerenciar a configuração</string>
+    	<string name="mon_14">Criar previsões</string>
+    	<string name="mon_15">Obter aceite do cliente de entregas parciais</string>
+    	<string name="mon_16">Realizar o controle da qualidade</string>
+    	<string name="mon_17">Realizar as reavaliações e auditorias de riscos</string>
+    	<string name="mon_18">Gerenciar as reservas</string>
+    	<string name="mon_19">Controlar as aquisições</string>
+    	<!-- Encerramento -->
+    	<string name="enc_1">Confirmar que o trabalho é realizado de acordo com os requisitos</string>
+    	<string name="enc_2">Terminar o encerramento das aquisições</string>
+    	<string name="enc_3">Obter a aceitação final do produto</string>
+    	<string name="enc_4">Terminar o encerramento financeiro</string>
+    	<string name="enc_5">Entregar o produto completo</string>
+    	<string name="enc_6">Solicitar feedback do cliente sobre o produto</string>
+    	<string name="enc_7">Concluir relatórios finais de desempenho</string>
+    	<string name="enc_8">Registros de índice e acervo</string>
+    	<string name="enc_9">Coletar as lições aprendidas finais e atualizar a base de conhecimento</string>
 </resources>

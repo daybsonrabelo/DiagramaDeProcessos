@@ -387,6 +387,5 @@ public class DiagramaParcial extends Activity {
 		itFilho.putExtra("Tipo", params.getString("Tipo"));
 		setResult(RESULT_OK, itFilho);
 		finish();
-    }
-    
+    } 
 }
