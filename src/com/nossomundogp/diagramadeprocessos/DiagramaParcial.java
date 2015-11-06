@@ -1,7 +1,6 @@
 package com.nossomundogp.diagramadeprocessos;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -34,33 +33,33 @@ public class DiagramaParcial extends Activity {
 	Bundle params;
 	Drawable corPadrao;
 	
-	String[] iniciacao = {"Selecionar o gerente de projetos", "Determinar a cultura e os sistemas existentes da empresa",
-			"Reunir processos, procedimentos e informações históricas", "Dividir projetos grandes em fases", "Compreender o caso de negócios",
-			"Identificar requisitos, premissas, riscos e restrições iniciais, além dos acordos existentes", "Avaliar a viabilidade dos projetos e de produtos com as restrições determinadas",
-			"Criar objetivos mensuráveis", "Desenvolver o termo de abertura do projeto", "Identificar as partes interessadas e determinar suas expectativas, influência a impacto"};
+	//String[] iniciacao = {"Selecionar o gerente de projetos", "Determinar a cultura e os sistemas existentes da empresa",
+	//		"Reunir processos, procedimentos e informações históricas", "Dividir projetos grandes em fases", "Compreender o caso de negócios",
+	//		"Identificar requisitos, premissas, riscos e restrições iniciais, além dos acordos existentes", "Avaliar a viabilidade dos projetos e de produtos com as restrições determinadas",
+	//		"Criar objetivos mensuráveis", "Desenvolver o termo de abertura do projeto", "Identificar as partes interessadas e determinar suas expectativas, influência a impacto"};
 	
-	String[] planejamento = {"Determinar como você vai planejar para cada área de atuação", "Determinar requisitos detalhados", "Criar a declaração do escopo do projeto", 
-			"Determinar o que adquirir e preparar documentos de aquisição", "Determinar a equipe de planejamento", "Criar a EAP e o dicionário da EAP", "Criar a lista de atividades",
-			"Criar o diagrama de rede", "Estimar os requisitos de recursos", "Estimar o tempo e os custos", "Determinar o caminho crítico", "Desenvolver o cronograma", "Desenvolver o orçamento",
-			"Determinar padrões, processos e métricas de qualidade", "Criar o plano de melhoria de processos", "Determinar todos os papéis e responsabilidades", "Planejar as comunicações e engajamento das partes interessadas",
-			"Realizar a identificação dos riscos, as análises qualitativa e quantitativa dos riscos e o planejamento de respostas aos riscos", "Voltar - iterações", "Finalizar os documentos de aquisição", 
-			"Criar o plano de gerenciamento de mudanças", "Concluir a parte de 'como executar e controlar' de todos os planos de gerenciamento", "Desenvolver uma linha de base de desempenho e um plano de GP realista e final",
-			"Obter a aprovação formal do plano", "Organizar uma reunião de partida"};
+	//String[] planejamento = {"Determinar como você vai planejar para cada área de atuação", "Determinar requisitos detalhados", "Criar a declaração do escopo do projeto", 
+	//		"Determinar o que adquirir e preparar documentos de aquisição", "Determinar a equipe de planejamento", "Criar a EAP e o dicionário da EAP", "Criar a lista de atividades",
+	//		"Criar o diagrama de rede", "Estimar os requisitos de recursos", "Estimar o tempo e os custos", "Determinar o caminho crítico", "Desenvolver o cronograma", "Desenvolver o orçamento",
+	//		"Determinar padrões, processos e métricas de qualidade", "Criar o plano de melhoria de processos", "Determinar todos os papéis e responsabilidades", "Planejar as comunicações e engajamento das partes interessadas",
+	//		"Realizar a identificação dos riscos, as análises qualitativa e quantitativa dos riscos e o planejamento de respostas aos riscos", "Voltar - iterações", "Finalizar os documentos de aquisição", 
+	//		"Criar o plano de gerenciamento de mudanças", "Concluir a parte de 'como executar e controlar' de todos os planos de gerenciamento", "Desenvolver uma linha de base de desempenho e um plano de GP realista e final",
+	//		"Obter a aprovação formal do plano", "Organizar uma reunião de partida"};
 	
-	String[] execucao = {"Executar o trabalho de acordo com o plano do GP", "Produzir as entregas do produto", "Reunir dados de desempenho e trabalho", 
-			"Solicitar mudanças", "Implementar apenas as mudanças aprovadas", "Melhorar continuamente", "Seguir os processos", "Determinar se os processos estão corretos e são eficazes",
-			"Realizar auditorias de qualidade", "Mobilizar a equipe final", "Gerenciar pessoas", "Avaliar o desempenho individual e de equipe", "Realizar atividades de desenvolvimento de equipe",
-			"Oferecer reconhecimento e recompensas", "Usar registros de questões", "Facilitar a resolução de conflitos", "Liberar recursos conforme o trabalho for terminado", "Enviar e receber informações e solicitar feedback",
-			"Reportar o desempenho do projeto", "Gerenciar o engajamento e as expectativas das partes interessadas", "Realizar reuniões", "Selecionar fornecedores"};
+	//String[] execucao = {"Executar o trabalho de acordo com o plano do GP", "Produzir as entregas do produto", "Reunir dados de desempenho e trabalho", 
+	//		"Solicitar mudanças", "Implementar apenas as mudanças aprovadas", "Melhorar continuamente", "Seguir os processos", "Determinar se os processos estão corretos e são eficazes",
+	//		"Realizar auditorias de qualidade", "Mobilizar a equipe final", "Gerenciar pessoas", "Avaliar o desempenho individual e de equipe", "Realizar atividades de desenvolvimento de equipe",
+	//		"Oferecer reconhecimento e recompensas", "Usar registros de questões", "Facilitar a resolução de conflitos", "Liberar recursos conforme o trabalho for terminado", "Enviar e receber informações e solicitar feedback",
+	//		"Reportar o desempenho do projeto", "Gerenciar o engajamento e as expectativas das partes interessadas", "Realizar reuniões", "Selecionar fornecedores"};
 	
-	String[] monitoramento = {"Tomar medidas para controlar o projeto", "Medir o desempenho pela linha de base", "Medir o desempenho por outras métricas do plano de GP", "Analisar e avaliar o desempenho",
-			"Determinar se as variações requerem ações corretivas ou outra solicitação de mudanças", "Influenciar os fatores que causam mudanças", "Solicitar mudanças", "Realizar o controle  integrado de mudanças",
-			"Aprovar ou rejeitar mudanças", "Atualizar o plano do GP e os documentos do projeto", "Informar as partes interessadas sobre os resultados de solicitações de mudança", "Monitorar o engajamento das partes interessadas",
-			"Gerenciar a configuração", "Criar previsões", "Obter aceite do cliente de entregas parciais", "Realizar o controle da qualidade", "Realizar as reavaliações e auditorias de riscos",
-			"Gerenciar as reservas", "Controlar as aquisições"};
+	//String[] monitoramento = {"Tomar medidas para controlar o projeto", "Medir o desempenho pela linha de base", "Medir o desempenho por outras métricas do plano de GP", "Analisar e avaliar o desempenho",
+	//		"Determinar se as variações requerem ações corretivas ou outra solicitação de mudanças", "Influenciar os fatores que causam mudanças", "Solicitar mudanças", "Realizar o controle  integrado de mudanças",
+	//		"Aprovar ou rejeitar mudanças", "Atualizar o plano do GP e os documentos do projeto", "Informar as partes interessadas sobre os resultados de solicitações de mudança", "Monitorar o engajamento das partes interessadas",
+	//		"Gerenciar a configuração", "Criar previsões", "Obter aceite do cliente de entregas parciais", "Realizar o controle da qualidade", "Realizar as reavaliações e auditorias de riscos",
+	//		"Gerenciar as reservas", "Controlar as aquisições"};
 	
-	String[] encerramento = {"Confirmar que o trabalho é realizado de acordo com os requisitos", "Terminar o encerramento das aquisições", "Obter a aceitação final do produto", "Terminar o encerramento financeiro",
-			"Entregar o produto completo", "Solicitar feedback do cliente sobre o produto", "Concluir relatórios finais de desempenho", "Registros de índice e acervo", "Coletar as lições aprendidas finais e atualizar a base de conhecimento"};
+	//String[] encerramento = {"Confirmar que o trabalho é realizado de acordo com os requisitos", "Terminar o encerramento das aquisições", "Obter a aceitação final do produto", "Terminar o encerramento financeiro",
+	//		"Entregar o produto completo", "Solicitar feedback do cliente sobre o produto", "Concluir relatórios finais de desempenho", "Registros de índice e acervo", "Coletar as lições aprendidas finais e atualizar a base de conhecimento"};
 	
 	List<String> listaStringIniciacao = new ArrayList<String>();
 	List<String> listaStringPlanejamento = new ArrayList<String>();
@@ -178,11 +177,101 @@ public class DiagramaParcial extends Activity {
     }
     
     private void iniciaVariaveis() {
+    	//Carregandos os textos da área iniciação
     	listaStringIniciacao = new ArrayList<String>();
+		listaStringIniciacao.add(getResources().getString(R.string.ini_1));
+		listaStringIniciacao.add(getResources().getString(R.string.ini_2));
+		listaStringIniciacao.add(getResources().getString(R.string.ini_3));
+		listaStringIniciacao.add(getResources().getString(R.string.ini_4));
+		listaStringIniciacao.add(getResources().getString(R.string.ini_5));
+		listaStringIniciacao.add(getResources().getString(R.string.ini_6));
+		listaStringIniciacao.add(getResources().getString(R.string.ini_7));
+		listaStringIniciacao.add(getResources().getString(R.string.ini_8));
+		listaStringIniciacao.add(getResources().getString(R.string.ini_9));
+		listaStringIniciacao.add(getResources().getString(R.string.ini_10));
+    	//Carregandos os textos da área planejamento
     	listaStringPlanejamento = new ArrayList<String>();
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_1));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_2));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_3));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_4));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_5));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_6));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_7));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_8));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_9));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_10));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_11));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_12));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_13));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_14));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_15));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_16));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_17));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_18));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_19));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_20));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_21));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_22));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_23));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_24));
+		listaStringPlanejamento.add(getResources().getString(R.string.pla_25));
+		//Carregandos os textos da área execução
     	listaStringExecucao = new ArrayList<String>();
+    	listaStringExecucao.add(getResources().getString(R.string.exe_1));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_2));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_3));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_4));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_5));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_6));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_7));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_8));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_9));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_10));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_11));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_12));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_13));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_14));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_15));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_16));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_17));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_18));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_19));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_20));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_21));
+    	listaStringExecucao.add(getResources().getString(R.string.exe_22));
+    	//Carregandos os textos da área monitoramento
     	listaStringMonitoramento = new ArrayList<String>();
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_1));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_2));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_3));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_4));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_5));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_6));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_7));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_8));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_9));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_10));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_11));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_12));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_13));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_14));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_15));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_16));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_17));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_18));
+    	listaStringMonitoramento.add(getResources().getString(R.string.mon_19));
+    	//Carregandos os textos da área encerramento
     	listaStringEncerramento = new ArrayList<String>();
+    	listaStringEncerramento.add(getResources().getString(R.string.enc_1));
+    	listaStringEncerramento.add(getResources().getString(R.string.enc_2));
+    	listaStringEncerramento.add(getResources().getString(R.string.enc_3));
+    	listaStringEncerramento.add(getResources().getString(R.string.enc_4));
+    	listaStringEncerramento.add(getResources().getString(R.string.enc_5));
+    	listaStringEncerramento.add(getResources().getString(R.string.enc_6));
+    	listaStringEncerramento.add(getResources().getString(R.string.enc_7));
+    	listaStringEncerramento.add(getResources().getString(R.string.enc_8));
+    	listaStringEncerramento.add(getResources().getString(R.string.enc_9));
     	
     	listaOpcoes = new ArrayList<View>();
     	
@@ -193,11 +282,12 @@ public class DiagramaParcial extends Activity {
     }
     
     private void carregaDados(String tipo) {
-    	listaStringIniciacao = Arrays.asList(iniciacao);
-    	listaStringPlanejamento = Arrays.asList(planejamento);
-        listaStringExecucao = Arrays.asList(execucao);
-        listaStringMonitoramento = Arrays.asList(monitoramento);
-        listaStringEncerramento = Arrays.asList(encerramento);
+    	
+    	//listaStringIniciacao = iniciacao;
+    	//listaStringPlanejamento = Arrays.asList(planejamento);
+        //listaStringExecucao = Arrays.asList(execucao);
+        //listaStringMonitoramento = Arrays.asList(monitoramento);
+        //listaStringEncerramento = Arrays.asList(encerramento);
         
         LinearLayout containerEsquerda = (LinearLayout) findViewById(R.id.esquerda);
         LinearLayout containerDireita = (LinearLayout) findViewById(R.id.direita);
@@ -205,7 +295,7 @@ public class DiagramaParcial extends Activity {
         TextView titulo = (TextView) findViewById(R.id.txtTitulo);
         if (tipo.equals("A")) {
         	carregaListas(listaStringIniciacao, listaStringPlanejamento, listaStringExecucao, listaStringMonitoramento, listaStringEncerramento, tipo, "B", "C", "D", "E");
-        	titulo.setText("Inicia��o");
+        	titulo.setText("Iniciação");
         	containerEsquerda.setBackgroundResource(R.color.iniciacao);
         	containerDireita.setBackgroundResource(R.color.iniciacao);
         } else if (tipo.equals("B")) {
@@ -215,7 +305,7 @@ public class DiagramaParcial extends Activity {
         	containerDireita.setBackgroundResource(R.color.planejamento);
         } else if (tipo.equals("C")) {
         	carregaListas(listaStringExecucao, listaStringIniciacao, listaStringPlanejamento, listaStringMonitoramento, listaStringEncerramento, tipo, "A", "B", "D", "E");
-        	titulo.setText("Execu��o");
+        	titulo.setText("Execução");
         	containerEsquerda.setBackgroundResource(R.color.execucao);
         	containerDireita.setBackgroundResource(R.color.execucao);
         } else if (tipo.equals("D")) {
@@ -388,4 +478,21 @@ public class DiagramaParcial extends Activity {
 		setResult(RESULT_OK, itFilho);
 		finish();
     } 
+    
+    /*
+    private void teste() {
+    	ArrayList<String> t = new ArrayList<String>();
+    	for(int i = 1; i <= 10; i++) {
+    		t.add(getResources().getString(R.string.ini_1));
+    		t.add(getResources().getString(R.string.ini_2));
+    		t.add(getResources().getString(R.string.ini_3));
+    		t.add(getResources().getString(R.string.ini_4));
+    		t.add(getResources().getString(R.string.ini_5));
+    		t.add(getResources().getString(R.string.ini_6));
+    		t.add(getResources().getString(R.string.ini_7));
+    		t.add(getResources().getString(R.string.ini_8));
+    		t.add(getResources().getString(R.string.ini_9));
+    		t.add(getResources().getString(R.string.ini_10));
+    	}
+    }*/
 }
