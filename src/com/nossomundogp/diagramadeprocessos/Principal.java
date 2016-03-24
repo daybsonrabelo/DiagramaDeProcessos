@@ -1,10 +1,15 @@
 package com.nossomundogp.diagramadeprocessos;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.InflateException;
 import android.view.LayoutInflater;
 import android.view.LayoutInflater.Factory2;
@@ -16,12 +21,10 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 
 public class Principal extends Activity implements OnClickListener {
 	
@@ -40,9 +43,8 @@ public class Principal extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
         
-        ActionBar ab = getActionBar();
-        //ab.setDisplayHomeAsUpEnabled(true);
-        
+        tratamentoArquivos();
+		        
         Button btnIniciacao = (Button) findViewById(R.id.btnIniciacao);
 		Button btnPlanejamento = (Button) findViewById(R.id.btnPlanejamento);
 		Button btnExecucao = (Button) findViewById(R.id.btnExecucao);
@@ -138,7 +140,8 @@ public class Principal extends Activity implements OnClickListener {
 		Intent it;
 		switch (item.getItemId()) {
 		case R.id.principal_menu_ajuda:
-			it = new Intent(this, Ajuda.class);
+			//it = new Intent(this, Ajuda.class);
+			it = new Intent(this, ScreenSlideActivity.class);
 			startActivity(it);
 			break;
 		case R.id.principal_menu_sobre:
@@ -192,6 +195,30 @@ public class Principal extends Activity implements OnClickListener {
 				return null;
 			}
 		});
+	}
+	
+	public void tratamentoArquivos() {
+		String arq = "arq.txt";
+        String cat = "arquivo";
+        
+        FileOutputStream out;
+        File f;
+        
+		try {
+			f = getFileStreamPath(arq);
+	        if (!f.exists()) {
+	        	out = openFileOutput(arq, MODE_APPEND);
+				out.write("\n".getBytes());
+				out.close();
+				Log.i(cat, "Arquivo gravado no sucesso!");
+				
+				startActivity(new Intent(this, ScreenSlideActivity.class));
+	        }
+		} catch (FileNotFoundException e) {
+			Log.e(cat, "Arquivo não encontrado: " + e.getMessage(), e);
+		} catch (IOException e) {
+			Log.e(cat, e.getMessage(), e);
+		}
 	}
 
 }

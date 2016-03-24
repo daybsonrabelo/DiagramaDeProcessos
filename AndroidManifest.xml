@@ -53,6 +53,10 @@
             android:label="@string/title_activity_ajuda"
             android:logo="@drawable/icone_inside" >
         </activity>
+        <activity
+            android:name="com.nossomundogp.diagramadeprocessos.ScreenSlideActivity"
+            android:label="@string/title_activity_ajuda" >
+        </activity>
     </application>
 
 </manifest>

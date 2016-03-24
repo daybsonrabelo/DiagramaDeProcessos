@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lorem_ipsum"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et magna ut erat elementum cursus in quis ipsum. Nam faucibus ultrices eros, vel tempor leo semper sit amet. Duis magna quam, congue vitae interdum nec, condimentum ut lectus. Sed commodo venenatis eros a dignissim. Nunc adipiscing turpis nec magna venenatis at ultricies ipsum bibendum. Sed volutpat urna quis nisi vulputate egestas. Etiam eu dui a enim lacinia dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nPhasellus orci mi, eleifend nec congue id, volutpat at neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer semper velit vel leo rutrum sed fermentum elit porta.]]></string>
+    <string name="title_template_step">Page <xliff:g id="step_number">%1$d</xliff:g>:</string>
 
     <string name="app_name">Process Diagram</string>
     <string name="hello_world">Hello world!</string>
@@ -36,95 +38,104 @@
     <string name="link">Link</string>
     <string name="title_activity_brancoso">Brancoso</string>
     
+    <!-- Tela Tutorial -->
+    <string name="action_previous">Previous</string>
+    <string name="action_next">Next</string>
+    <string name="action_finish">Finish</string>
+
     <!-- Textos das áreas de processos -->
-    	<!-- Iniciação -->
-    	<string name="ini_1">Select the project manager</string>
-    	<string name="ini_2">Determine the culture and existing enterprise systems</string>
-    	<string name="ini_3">Gathering processes, procedures and historical information</string>
-    	<string name="ini_4">Divide large projects into phases</string>
-    	<string name="ini_5">Understand the business case</string>
-    	<string name="ini_6">Identify requirements, assumptions, risks and initial restrictions, in addition to existing agreements</string>
-    	<string name="ini_7">Assess the feasibility of the projects and products with certain restrictions</string>
-    	<string name="ini_8">Create measurable goals</string>
-    	<string name="ini_9">Develop project charter</string>
-    	<string name="ini_10">Identify the stakeholders and determine their expectations, influence or impact</string>
-    	<!-- Planejamento -->
-    	<string name="pla_1">Determine how you will plan for each area</string>
-    	<string name="pla_2">Determine detailed requirements</string>
-    	<string name="pla_3">Create the project scope statement</string>
-    	<string name="pla_4">Determine what to acquire and prepare procurement documents</string>
-    	<string name="pla_5">Determine the planning team</string>
-    	<string name="pla_6">Create EAP and EAP dictionary</string>
-    	<string name="pla_7">Create a to-do list</string>
-    	<string name="pla_8">Create the network diagram</string>
-    	<string name="pla_9">Estimate resource requirements</string>
-    	<string name="pla_10">Estimate the time and costs</string>
-    	<string name="pla_11">Determine the critical path</string>
-    	<string name="pla_12">Develop schedule</string>
-    	<string name="pla_13">Develop budget</string>
-    	<string name="pla_14">Determine standards, processes and quality metrics</string>
-    	<string name="pla_15">Create the improvement plan process</string>
-    	<string name="pla_16">Determine all the roles and responsibilities</string>
-    	<string name="pla_17">Plan Communications and stakeholder engagement</string>
-    	<string name="pla_18">Conduct risk identification, qualitative and quantitative risk analysis and planning risk responses</string>
-    	<string name="pla_19">Back - iterations</string>
-    	<string name="pla_20">Finalize the document acquisition</string>
-    	<string name="pla_21">Create the change management plan</string>
-    	<string name="pla_22">Complete part of "how to run and control" of all management plans</string>
-    	<string name="pla_23">To develop a baseline performance and a realistic GP plan and end</string>
-    	<string name="pla_24">Get the formal approval of the plan</string>
-    	<string name="pla_25">Organize a round of meeting</string>
-    	<!-- Execução -->
-    	<string name="exe_1">Perform the work according to the GP plan</string>
-    	<string name="exe_2">Produce deliveries of the product</string>
-    	<string name="exe_3">Gather performance data and work</string>
-    	<string name="exe_4">Make changes</string>
-    	<string name="exe_5">Implement only approved changes</string>
-    	<string name="exe_6">Continually improve</string>
-    	<string name="exe_7">Follow the processes</string>
-    	<string name="exe_8">Determine whether the processes are correct and are effective</string>
-    	<string name="exe_9">Perform quality audits</string>
-    	<string name="exe_10">Mobilize the final team</string>
-    	<string name="exe_11">Managing people</string>
-    	<string name="exe_12">Assess individual performance and team</string>
-    	<string name="exe_13">Conduct staff development activities</string>
-    	<string name="exe_14">Provide recognition and rewards</string>
-    	<string name="exe_15">Use issues records</string>
-    	<string name="exe_16">Facilitate conflict resolution</string>
-    	<string name="exe_17">Free resources as the work was completed</string>
-    	<string name="exe_18">Send and receive information and solicit feedback</string>
-    	<string name="exe_19">Report project performance</string>
-    	<string name="exe_20">Manage the engagement and stakeholder expectations</string>
-    	<string name="exe_21">Hold meetings</string>
-    	<string name="exe_22">Select sellers</string>
-    	<!-- Monitoramento -->
-    	<string name="mon_1">Take steps to control the project</string>
-    	<string name="mon_2">Measuring the performance baseline</string>
-    	<string name="mon_3">Measuring performance by other GP plan metrics</string>
-    	<string name="mon_4">Analyze and evaluate performance</string>
-    	<string name="mon_5">Determine whether the variation requires corrective action or other request changes</string>
-    	<string name="mon_6">Influencing the factors that cause changes</string>
-    	<string name="mon_7">Make changes</string>
-    	<string name="mon_8">Perform integrated change control</string>
-    	<string name="mon_9">Approve or reject changes</string>
-    	<string name="mon_10">Update the GP plan and project documents</string>
-    	<string name="mon_11">Inform stakeholders on the results of change requests</string>
-    	<string name="mon_12">Monitor stakeholder engagement</string>
-    	<string name="mon_13">Manage the configuration</string>
-    	<string name="mon_14">Making predictions</string>
-    	<string name="mon_15">Get accepted the partial deliveries client</string>
-    	<string name="mon_16">Perform quality control</string>
-    	<string name="mon_17">Take the assessments and risk audits</string>
-    	<string name="mon_18">Manage bookings</string>
-    	<string name="mon_19">Control acquisitions</string>
-    	<!-- Encerramento -->
-    	<string name="enc_1">Confirm that the work is done according to the requirements</string>
-    	<string name="enc_2">End closing of acquisitions</string>
-    	<string name="enc_3">Get the final acceptance of the product</string>
-    	<string name="enc_4">End financial closure</string>
-    	<string name="enc_5">Deliver the complete product</string>
-    	<string name="enc_6">Solicit customer feedback about the product</string>
-    	<string name="enc_7">Complete final reports performance</string>
-    	<string name="enc_8">Index records and collections</string>
-    	<string name="enc_9">Collect lessons learned late and update the knowledge base</string>
+    <!-- Iniciação -->
+    <string name="ini_1">Select the project manager</string>
+    <string name="ini_2">Determine the culture and existing enterprise systems</string>
+    <string name="ini_3">Gathering processes, procedures and historical information</string>
+    <string name="ini_4">Divide large projects into phases</string>
+    <string name="ini_5">Understand the business case</string>
+    <string name="ini_6">Identify requirements, assumptions, risks and initial restrictions, in addition to existing agreements</string>
+    <string name="ini_7">Assess the feasibility of the projects and products with certain restrictions</string>
+    <string name="ini_8">Create measurable goals</string>
+    <string name="ini_9">Develop project charter</string>
+    <string name="ini_10">Identify the stakeholders and determine their expectations, influence or impact</string>
+    <!-- Planejamento -->
+    <string name="pla_1">Determine how you will plan for each area</string>
+    <string name="pla_2">Determine detailed requirements</string>
+    <string name="pla_3">Create the project scope statement</string>
+    <string name="pla_4">Determine what to acquire and prepare procurement documents</string>
+    <string name="pla_5">Determine the planning team</string>
+    <string name="pla_6">Create EAP and EAP dictionary</string>
+    <string name="pla_7">Create a to-do list</string>
+    <string name="pla_8">Create the network diagram</string>
+    <string name="pla_9">Estimate resource requirements</string>
+    <string name="pla_10">Estimate the time and costs</string>
+    <string name="pla_11">Determine the critical path</string>
+    <string name="pla_12">Develop schedule</string>
+    <string name="pla_13">Develop budget</string>
+    <string name="pla_14">Determine standards, processes and quality metrics</string>
+    <string name="pla_15">Create the improvement plan process</string>
+    <string name="pla_16">Determine all the roles and responsibilities</string>
+    <string name="pla_17">Plan Communications and stakeholder engagement</string>
+    <string name="pla_18">Conduct risk identification, qualitative and quantitative risk analysis and planning risk responses</string>
+    <string name="pla_19">Back - iterations</string>
+    <string name="pla_20">Finalize the document acquisition</string>
+    <string name="pla_21">Create the change management plan</string>
+    <string name="pla_22">Complete part of "how to run and control" of all management plans</string>
+    <string name="pla_23">To develop a baseline performance and a realistic GP plan and end</string>
+    <string name="pla_24">Get the formal approval of the plan</string>
+    <string name="pla_25">Organize a round of meeting</string>
+    <!-- Execução -->
+    <string name="exe_1">Perform the work according to the GP plan</string>
+    <string name="exe_2">Produce deliveries of the product</string>
+    <string name="exe_3">Gather performance data and work</string>
+    <string name="exe_4">Make changes</string>
+    <string name="exe_5">Implement only approved changes</string>
+    <string name="exe_6">Continually improve</string>
+    <string name="exe_7">Follow the processes</string>
+    <string name="exe_8">Determine whether the processes are correct and are effective</string>
+    <string name="exe_9">Perform quality audits</string>
+    <string name="exe_10">Mobilize the final team</string>
+    <string name="exe_11">Managing people</string>
+    <string name="exe_12">Assess individual performance and team</string>
+    <string name="exe_13">Conduct staff development activities</string>
+    <string name="exe_14">Provide recognition and rewards</string>
+    <string name="exe_15">Use issues records</string>
+    <string name="exe_16">Facilitate conflict resolution</string>
+    <string name="exe_17">Free resources as the work was completed</string>
+    <string name="exe_18">Send and receive information and solicit feedback</string>
+    <string name="exe_19">Report project performance</string>
+    <string name="exe_20">Manage the engagement and stakeholder expectations</string>
+    <string name="exe_21">Hold meetings</string>
+    <string name="exe_22">Select sellers</string>
+    <!-- Monitoramento -->
+    <string name="mon_1">Take steps to control the project</string>
+    <string name="mon_2">Measuring the performance baseline</string>
+    <string name="mon_3">Measuring performance by other GP plan metrics</string>
+    <string name="mon_4">Analyze and evaluate performance</string>
+    <string name="mon_5">Determine whether the variation requires corrective action or other request changes</string>
+    <string name="mon_6">Influencing the factors that cause changes</string>
+    <string name="mon_7">Make changes</string>
+    <string name="mon_8">Perform integrated change control</string>
+    <string name="mon_9">Approve or reject changes</string>
+    <string name="mon_10">Update the GP plan and project documents</string>
+    <string name="mon_11">Inform stakeholders on the results of change requests</string>
+    <string name="mon_12">Monitor stakeholder engagement</string>
+    <string name="mon_13">Manage the configuration</string>
+    <string name="mon_14">Making predictions</string>
+    <string name="mon_15">Get accepted the partial deliveries client</string>
+    <string name="mon_16">Perform quality control</string>
+    <string name="mon_17">Take the assessments and risk audits</string>
+    <string name="mon_18">Manage bookings</string>
+    <string name="mon_19">Control acquisitions</string>
+    <!-- Encerramento -->
+    <string name="enc_1">Confirm that the work is done according to the requirements</string>
+    <string name="enc_2">End closing of acquisitions</string>
+    <string name="enc_3">Get the final acceptance of the product</string>
+    <string name="enc_4">End financial closure</string>
+    <string name="enc_5">Deliver the complete product</string>
+    <string name="enc_6">Solicit customer feedback about the product</string>
+    <string name="enc_7">Complete final reports performance</string>
+    <string name="enc_8">Index records and collections</string>
+    <string name="enc_9">Collect lessons learned late and update the knowledge base</string>
+    
+    
+    <string name="title_activity_screen_slide">ScreenSlideActivity</string>
+
 </resources>
