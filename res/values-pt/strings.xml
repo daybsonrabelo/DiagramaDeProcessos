@@ -135,7 +135,20 @@
     	<string name="enc_8">Registros de índice e acervo</string>
     	<string name="enc_9">Coletar as lições aprendidas finais e atualizar a base de conhecimento</string>
     	
+    <!-- Fim Textos das áreas de processos -->
     	
-    	<string name="title_activity_screen_slide">ScreenSlideActivity</string>
+    <string name="title_activity_screen_slide">ScreenSlideActivity</string>
+    <string name="step1">Selecione uma área de conhecimento</string>
+    <string name="step2">Selecione as ações a esquerda e arraste para o lado direito de acordo com a área de processo</string>
+    <string name="step3">Marque "CHECAR" para verificar as ações selecionadas</string>
+    <string name="step4">Será exibida uma mensagem informando se as ações selecionadas estão corretas ou incorretas</string>
+    <string name="step5">Clicando em reiniciar as ações voltarão para o lado esquerdo em ordens diferentes</string>
+    <string name="step6">Quando a checagem estiver correta o botão finalizar é liberado</string>
+    <string name="step7">Clicando em finalizar, você retorna para a tela principal com a área de processo preenchida</string>
+    
+    <string name="solicitar_mudancas">Solicitar mudanças</string>
+    <string name="opcoes_erradas">Existe uma ou mais ações não pertencentes a esse grupo de processo!</string>
+    <string name="opcoes_corretas">Parabéns, você concluiu com sucesso o grupo de processo!</string>
+    <string name="opcoes_faltando">Falta uma ou mais ações para o grupo de processo!</string>
     	
 </resources>

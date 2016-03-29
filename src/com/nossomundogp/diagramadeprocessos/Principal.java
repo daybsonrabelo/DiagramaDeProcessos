@@ -173,7 +173,7 @@ public class Principal extends Activity implements OnClickListener {
 	                    new Handler().post( new Runnable() {  
 	                        public void run () {  
 	                            // sets the background color   
-	                            view.setBackgroundResource( R.color.cor_errado);
+	                            view.setBackgroundResource(R.color.cor_errado);
 	                            // sets the text color              
 	                            ((TextView) view).setTextColor(Color.RED);
 	                            // sets the text size              
@@ -210,7 +210,7 @@ public class Principal extends Activity implements OnClickListener {
 	        	out = openFileOutput(arq, MODE_APPEND);
 				out.write("\n".getBytes());
 				out.close();
-				Log.i(cat, "Arquivo gravado no sucesso!");
+				Log.i(cat, "Arquivo gravado com sucesso!");
 				
 				startActivity(new Intent(this, ScreenSlideActivity.class));
 	        }

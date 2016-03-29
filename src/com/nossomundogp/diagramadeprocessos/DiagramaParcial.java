@@ -32,35 +32,7 @@ public class DiagramaParcial extends Activity {
 	
 	Bundle params;
 	Drawable corPadrao;
-	
-	//String[] iniciacao = {"Selecionar o gerente de projetos", "Determinar a cultura e os sistemas existentes da empresa",
-	//		"Reunir processos, procedimentos e informações históricas", "Dividir projetos grandes em fases", "Compreender o caso de negócios",
-	//		"Identificar requisitos, premissas, riscos e restrições iniciais, além dos acordos existentes", "Avaliar a viabilidade dos projetos e de produtos com as restrições determinadas",
-	//		"Criar objetivos mensuráveis", "Desenvolver o termo de abertura do projeto", "Identificar as partes interessadas e determinar suas expectativas, influência a impacto"};
-	
-	//String[] planejamento = {"Determinar como você vai planejar para cada área de atuação", "Determinar requisitos detalhados", "Criar a declaração do escopo do projeto", 
-	//		"Determinar o que adquirir e preparar documentos de aquisição", "Determinar a equipe de planejamento", "Criar a EAP e o dicionário da EAP", "Criar a lista de atividades",
-	//		"Criar o diagrama de rede", "Estimar os requisitos de recursos", "Estimar o tempo e os custos", "Determinar o caminho crítico", "Desenvolver o cronograma", "Desenvolver o orçamento",
-	//		"Determinar padrões, processos e métricas de qualidade", "Criar o plano de melhoria de processos", "Determinar todos os papéis e responsabilidades", "Planejar as comunicações e engajamento das partes interessadas",
-	//		"Realizar a identificação dos riscos, as análises qualitativa e quantitativa dos riscos e o planejamento de respostas aos riscos", "Voltar - iterações", "Finalizar os documentos de aquisição", 
-	//		"Criar o plano de gerenciamento de mudanças", "Concluir a parte de 'como executar e controlar' de todos os planos de gerenciamento", "Desenvolver uma linha de base de desempenho e um plano de GP realista e final",
-	//		"Obter a aprovação formal do plano", "Organizar uma reunião de partida"};
-	
-	//String[] execucao = {"Executar o trabalho de acordo com o plano do GP", "Produzir as entregas do produto", "Reunir dados de desempenho e trabalho", 
-	//		"Solicitar mudanças", "Implementar apenas as mudanças aprovadas", "Melhorar continuamente", "Seguir os processos", "Determinar se os processos estão corretos e são eficazes",
-	//		"Realizar auditorias de qualidade", "Mobilizar a equipe final", "Gerenciar pessoas", "Avaliar o desempenho individual e de equipe", "Realizar atividades de desenvolvimento de equipe",
-	//		"Oferecer reconhecimento e recompensas", "Usar registros de questões", "Facilitar a resolução de conflitos", "Liberar recursos conforme o trabalho for terminado", "Enviar e receber informações e solicitar feedback",
-	//		"Reportar o desempenho do projeto", "Gerenciar o engajamento e as expectativas das partes interessadas", "Realizar reuniões", "Selecionar fornecedores"};
-	
-	//String[] monitoramento = {"Tomar medidas para controlar o projeto", "Medir o desempenho pela linha de base", "Medir o desempenho por outras métricas do plano de GP", "Analisar e avaliar o desempenho",
-	//		"Determinar se as variações requerem ações corretivas ou outra solicitação de mudanças", "Influenciar os fatores que causam mudanças", "Solicitar mudanças", "Realizar o controle  integrado de mudanças",
-	//		"Aprovar ou rejeitar mudanças", "Atualizar o plano do GP e os documentos do projeto", "Informar as partes interessadas sobre os resultados de solicitações de mudança", "Monitorar o engajamento das partes interessadas",
-	//		"Gerenciar a configuração", "Criar previsões", "Obter aceite do cliente de entregas parciais", "Realizar o controle da qualidade", "Realizar as reavaliações e auditorias de riscos",
-	//		"Gerenciar as reservas", "Controlar as aquisições"};
-	
-	//String[] encerramento = {"Confirmar que o trabalho é realizado de acordo com os requisitos", "Terminar o encerramento das aquisições", "Obter a aceitação final do produto", "Terminar o encerramento financeiro",
-	//		"Entregar o produto completo", "Solicitar feedback do cliente sobre o produto", "Concluir relatórios finais de desempenho", "Registros de índice e acervo", "Coletar as lições aprendidas finais e atualizar a base de conhecimento"};
-	
+		
 	List<String> listaStringIniciacao = new ArrayList<String>();
 	List<String> listaStringPlanejamento = new ArrayList<String>();
 	List<String> listaStringExecucao = new ArrayList<String>();
@@ -117,7 +89,7 @@ public class DiagramaParcial extends Activity {
 				
 			case DragEvent.ACTION_DRAG_ENTERED:
 				Log.i("Script", num + " - ACTION_DRAG_ENTERED");
-				v.setBackgroundColor(Color.parseColor("#F8FCAB"));//Amarelo claro
+				v.setBackgroundColor(getResources().getColor(R.color.amarelo_claro));
 				break;
 				
 			case DragEvent.ACTION_DRAG_LOCATION:
@@ -282,12 +254,6 @@ public class DiagramaParcial extends Activity {
     }
     
     private void carregaDados(String tipo) {
-    	
-    	//listaStringIniciacao = iniciacao;
-    	//listaStringPlanejamento = Arrays.asList(planejamento);
-        //listaStringExecucao = Arrays.asList(execucao);
-        //listaStringMonitoramento = Arrays.asList(monitoramento);
-        //listaStringEncerramento = Arrays.asList(encerramento);
         
         LinearLayout containerEsquerda = (LinearLayout) findViewById(R.id.esquerda);
         LinearLayout containerDireita = (LinearLayout) findViewById(R.id.direita);
@@ -295,27 +261,27 @@ public class DiagramaParcial extends Activity {
         TextView titulo = (TextView) findViewById(R.id.txtTitulo);
         if (tipo.equals("A")) {
         	carregaListas(listaStringIniciacao, listaStringPlanejamento, listaStringExecucao, listaStringMonitoramento, listaStringEncerramento, tipo, "B", "C", "D", "E");
-        	titulo.setText("Iniciação");
+        	titulo.setText(getResources().getString(R.string.iniciacao));
         	containerEsquerda.setBackgroundResource(R.color.iniciacao);
         	containerDireita.setBackgroundResource(R.color.iniciacao);
         } else if (tipo.equals("B")) {
         	carregaListas(listaStringPlanejamento, listaStringIniciacao, listaStringExecucao, listaStringMonitoramento, listaStringEncerramento, tipo, "A", "C", "D", "E");
-        	titulo.setText("Planejamento");
+        	titulo.setText(getResources().getString(R.string.planejamento));
         	containerEsquerda.setBackgroundResource(R.color.planejamento);
         	containerDireita.setBackgroundResource(R.color.planejamento);
         } else if (tipo.equals("C")) {
         	carregaListas(listaStringExecucao, listaStringIniciacao, listaStringPlanejamento, listaStringMonitoramento, listaStringEncerramento, tipo, "A", "B", "D", "E");
-        	titulo.setText("Execução");
+        	titulo.setText(getResources().getString(R.string.execucao));
         	containerEsquerda.setBackgroundResource(R.color.execucao);
         	containerDireita.setBackgroundResource(R.color.execucao);
         } else if (tipo.equals("D")) {
         	carregaListas(listaStringMonitoramento, listaStringIniciacao, listaStringPlanejamento, listaStringExecucao, listaStringEncerramento, tipo, "A", "B", "C", "E");
-        	titulo.setText("Monitoramento e Controle");
+        	titulo.setText(getResources().getString(R.string.monitoramento_controle));
         	containerEsquerda.setBackgroundResource(R.color.monitoramento_controle);
         	containerDireita.setBackgroundResource(R.color.monitoramento_controle);
         } else {
         	carregaListas(listaStringEncerramento, listaStringIniciacao, listaStringPlanejamento, listaStringExecucao, listaStringMonitoramento, tipo, "A", "B", "C", "D");
-        	titulo.setText("Encerramento");
+        	titulo.setText(getResources().getString(R.string.encerramento));
         	containerEsquerda.setBackgroundResource(R.color.encerramento);
         	containerDireita.setBackgroundResource(R.color.encerramento);
         }
@@ -417,7 +383,7 @@ public class DiagramaParcial extends Activity {
 			botaoC = (Button) bt;
 			tag = botaoC.getTag().toString().trim();
 			
-			if (botaoC.getText().equals("Solicitar mudanças") && 
+			if (botaoC.getText().equals(getResources().getString(R.string.solicitar_mudancas)) && 
 					(params.getString("Tipo").equals("C") || params.getString("Tipo").equals("D"))) {
 				count++;
 			} else if (tag.equals(params.getString("Tipo"))) {
@@ -431,18 +397,18 @@ public class DiagramaParcial extends Activity {
 		}
 		
 		if (errado) {
-			Toast.makeText(DiagramaParcial.this, "Existe uma ou mais ações não pertencentes a esse grupo de processo!", Toast.LENGTH_SHORT).show();
+			Toast.makeText(DiagramaParcial.this, getResources().getString(R.string.opcoes_erradas), Toast.LENGTH_SHORT).show();
 			correto = false;
 			invalidateOptionsMenu();
 			return;
 		}
 		
 		if (count == total) {
-			Toast.makeText(DiagramaParcial.this, "Parabéns, você concluiu com sucesso o grupo de processo!", Toast.LENGTH_SHORT).show();
+			Toast.makeText(DiagramaParcial.this, getResources().getString(R.string.opcoes_corretas), Toast.LENGTH_SHORT).show();
 			correto = true;
 			invalidateOptionsMenu();
 		} else {
-			Toast.makeText(DiagramaParcial.this, "Falta uma ou mais ações para o grupo de processo!", Toast.LENGTH_SHORT).show();
+			Toast.makeText(DiagramaParcial.this, getResources().getString(R.string.opcoes_faltando), Toast.LENGTH_SHORT).show();
 			correto = false;
 			invalidateOptionsMenu();
 		}
@@ -450,8 +416,8 @@ public class DiagramaParcial extends Activity {
     
     /**
      * Reinicia os estado da tela.
-     * Limpa as opções do ScrollView da direita e ramdomiza as
-     * opções do ScrollView da esquerda.
+     * Limpa as opções do ScrollView da direita e ramdomiza
+     * as opções do ScrollView da esquerda.
      */
     private void reiniciar() {
     	iniciaVariaveis();
@@ -478,21 +444,4 @@ public class DiagramaParcial extends Activity {
 		setResult(RESULT_OK, itFilho);
 		finish();
     } 
-    
-    /*
-    private void teste() {
-    	ArrayList<String> t = new ArrayList<String>();
-    	for(int i = 1; i <= 10; i++) {
-    		t.add(getResources().getString(R.string.ini_1));
-    		t.add(getResources().getString(R.string.ini_2));
-    		t.add(getResources().getString(R.string.ini_3));
-    		t.add(getResources().getString(R.string.ini_4));
-    		t.add(getResources().getString(R.string.ini_5));
-    		t.add(getResources().getString(R.string.ini_6));
-    		t.add(getResources().getString(R.string.ini_7));
-    		t.add(getResources().getString(R.string.ini_8));
-    		t.add(getResources().getString(R.string.ini_9));
-    		t.add(getResources().getString(R.string.ini_10));
-    	}
-    }*/
 }

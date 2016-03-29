@@ -20,7 +20,15 @@
             android:id="@+id/imgMudar"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:src="@drawable/step1" />
+            android:src="@drawable/step1"
+            android:layout_marginBottom="10dp" />
+        
+        <TextView android:id="@android:id/text2"
+            style="?android:textAppearanceLarge"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+           	android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
 
     </LinearLayout>
 

@@ -55,19 +55,26 @@ public class ScreenSlidePageFragment extends Fragment {
 
         // Set the title view to show the page number.
         if ((mPageNumber + 1) == 1) {
-        	((ImageView) rootView.findViewById(R.id.imgMudar)).setImageResource(R.drawable.step1);	
+        	((ImageView) rootView.findViewById(R.id.imgMudar)).setImageResource(R.drawable.step1);
+        	 ((TextView) rootView.findViewById(android.R.id.text2)).setText(R.string.step1);
         } else if ((mPageNumber + 1) == 2) {
         	((ImageView) rootView.findViewById(R.id.imgMudar)).setImageResource(R.drawable.step2);
+        	((TextView) rootView.findViewById(android.R.id.text2)).setText(R.string.step2);
         } else if ((mPageNumber + 1) == 3) {
         	((ImageView) rootView.findViewById(R.id.imgMudar)).setImageResource(R.drawable.step3);
+        	((TextView) rootView.findViewById(android.R.id.text2)).setText(R.string.step3);
         } else if ((mPageNumber + 1) == 4) {
         	((ImageView) rootView.findViewById(R.id.imgMudar)).setImageResource(R.drawable.step4);
+        	((TextView) rootView.findViewById(android.R.id.text2)).setText(R.string.step4);
         } else if ((mPageNumber + 1) == 5) {
         	((ImageView) rootView.findViewById(R.id.imgMudar)).setImageResource(R.drawable.step5);
+        	((TextView) rootView.findViewById(android.R.id.text2)).setText(R.string.step5);
         } else if ((mPageNumber + 1) == 6) {
         	((ImageView) rootView.findViewById(R.id.imgMudar)).setImageResource(R.drawable.step6);
+        	((TextView) rootView.findViewById(android.R.id.text2)).setText(R.string.step6);
         } else {
         	((ImageView) rootView.findViewById(R.id.imgMudar)).setImageResource(R.drawable.step7);
+        	((TextView) rootView.findViewById(android.R.id.text2)).setText(R.string.step7);
         }
         
         ((TextView) rootView.findViewById(android.R.id.text1)).setText(
